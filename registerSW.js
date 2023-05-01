@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('http://ali-khoshqamat.github.io/NobaanPWI-Task/sw.js', { scope: 'http://ali-khoshqamat.github.io/NobaanPWI-Task/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/NobaanPWI-Task/sw.js', { scope: '/NobaanPWI-Task/' })})}
