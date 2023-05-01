@@ -88,10 +88,10 @@ define(['./workbox-6e567876'], (function (workbox) { 'use strict';
     "revision": null
   }, {
     "url": "index.html",
-    "revision": "1cafbab327ba50993449f388ac76e1ec"
+    "revision": "b8ea4d923acbe8c12bbf19075a8de1c6"
   }, {
     "url": "registerSW.js",
-    "revision": "1872c500de691dce40960bb85481de07"
+    "revision": "8e48e57ced64931cca9e084bd5c09d07"
   }, {
     "url": "vite.svg",
     "revision": "8e3a10e157f75ada21ab742c022d5430"
@@ -103,7 +103,7 @@ define(['./workbox-6e567876'], (function (workbox) { 'use strict';
     "revision": "4db5b8fe442a8f8fdc6e35cd40138057"
   }, {
     "url": "manifest.webmanifest",
-    "revision": "26e2473312daf4d71b13b36f80b8e95c"
+    "revision": "91199bd0430a600f2d5d9db40986c418"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html")));
