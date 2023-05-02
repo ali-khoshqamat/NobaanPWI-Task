@@ -4,11 +4,11 @@ const InstallButton = () => {
   const [supportsInstallPrompt, setSupportsInstallPrompt] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
 
-  //   if ("beforeinstallprompt" in window) {
-  //     console.log("beforeinstallprompt");
-  //   } else {
-  //     console.log("!beforeinstallprompt");
-  //   }
+  // if ("beforeinstallprompt" in window) {
+  //   console.log("beforeinstallprompt");
+  // } else {
+  //   console.log("!beforeinstallprompt");
+  // }
 
   useEffect(() => {
     const handler = (event: any) => {
