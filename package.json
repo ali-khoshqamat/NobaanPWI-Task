@@ -13,15 +13,21 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "cannon-es": "^0.20.0",
+    "gsap": "^3.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-window": "^1.8.9"
+    "react-three-fiber": "^6.0.13",
+    "react-window": "^1.8.9",
+    "three": "^0.152.2",
+    "use-cannon": "^0.5.3"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/react-window": "^1.8.5",
+    "@types/three": "^0.151.0",
     "@types/webrtc": "^0.0.35",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
