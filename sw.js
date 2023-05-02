@@ -81,14 +81,14 @@ define(['./workbox-6e567876'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "assets/index-9da27873.css",
+    "url": "assets/index-124bf012.js",
     "revision": null
   }, {
-    "url": "assets/index-a1b57f47.js",
+    "url": "assets/index-fadd434c.css",
     "revision": null
   }, {
     "url": "index.html",
-    "revision": "6f35d855002c046a62f6efa9dee022b5"
+    "revision": "d5c9994f9e71a8eda9c6c7c95e4a4dd4"
   }, {
     "url": "registerSW.js",
     "revision": "8e48e57ced64931cca9e084bd5c09d07"
