@@ -40,7 +40,7 @@ const InstallButton = () => {
 
   return (
     <button
-      className="outline-none py-1 px-3.5 bg-green-700 text-stone-50 border border-solid border-green-700 rounded-md font-bold"
+      className="outline-none py-1 px-3.5 mb-5 bg-green-700 text-stone-50 border border-solid border-green-700 rounded-md font-bold"
       onClick={handleInstallClick}
     >
       Install App

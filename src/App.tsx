@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import InstallButton from "./components/InstallButton";
 import VibrateCamera from "./components/VibrateCamera";
+import { FixedSizeList, ListChildComponentProps } from "react-window";
 // import type { MediaStream, MediaStreamConstraints } from "@types/webrtc";
 // import { MediaStream, MediaStreamConstraints } from "webrtc";
 
@@ -10,6 +11,15 @@ function App() {
   //   window.matchMedia("(orientation: landscape)").matches
   // );
   // console.log("isLandscapt: ", isLandscape);
+  const data = Array.from({ length: 1000000 }, (_, index) => `Item ${index}`);
+  const Row = ({ index, style }: ListChildComponentProps) => (
+    <div
+      style={style}
+      className="bg-stone-100 p-1 w-full border border-green-600 rounded-md"
+    >
+      {data[index]}
+    </div>
+  );
 
   useEffect(() => {
     const orientationChangeHandler = (event: DeviceOrientationEvent) => {
@@ -47,8 +57,19 @@ function App() {
         <header className="font-bold text-xl m-4">
           <h2>Nobaan</h2>
         </header>
+        {/* <section className="flex flex-col w-11/12 bg-white p-2.5 border border-solid border-gray-300 rounded-md mb-5"> */}
+
         <VibrateCamera />
         <InstallButton />
+        <FixedSizeList
+          height={500}
+          width={500}
+          itemCount={1000000}
+          itemSize={35}
+          className="!w-11/12 bg-red-100 border border-solid border-gray-300 rounded-md"
+        >
+          {Row}
+        </FixedSizeList>
       </div>
     </>
   );
