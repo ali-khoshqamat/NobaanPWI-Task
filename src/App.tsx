@@ -5,6 +5,7 @@ import BatteryStatus from "./components/BatteryStatus";
 import Header from "./components/Header";
 import Animation from "./components/Animation";
 import List from "./components/List";
+import PhoneNumberAuthForm from "./components/OTPCredential";
 // import type { MediaStream, MediaStreamConstraints } from "@types/webrtc";
 // import { MediaStream, MediaStreamConstraints } from "webrtc";
 
@@ -17,16 +18,16 @@ function App() {
 
   useEffect(() => {
     const orientationChangeHandler = (event: DeviceOrientationEvent) => {
-      console.log("event: ", event);
+      // console.log("event: ", event);
       // window.alert(`gamma: ${event.gamma}`);
       if (event.gamma !== null && event.beta !== null) {
         const gamma = event.gamma * (Math.PI / 180);
         const beta = event.beta * (Math.PI / 180);
         // const radians = 90 * (Math.PI / 180);
         const radians = 45 * (Math.PI / 180);
-        console.log("gamma: ", gamma);
+        // console.log("gamma: ", gamma);
         // window.alert(`gamma: ${gamma}`);
-        console.log("abs(gamma): ", Math.abs(gamma));
+        // console.log("abs(gamma): ", Math.abs(gamma));
         // setIsLandscape(Math.abs(gamma) > 90);
         // setIsLandscape(Math.abs(gamma) > 1.5708 && Math.abs(beta) < 1.5708);
         setIsLandscape(Math.abs(gamma) > radians && Math.abs(beta) < radians);
@@ -50,6 +51,7 @@ function App() {
       >
         <BatteryStatus />
         <Header />
+        <PhoneNumberAuthForm />
         <VibrateCamera />
         <InstallButton />
         <Animation />
