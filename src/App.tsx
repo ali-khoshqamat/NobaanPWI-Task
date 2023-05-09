@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Animation from "./components/Animation";
 import List from "./components/List";
 import PhoneNumberAuthForm from "./components/OTPCredential";
+import WebAssemblyComponent from "./components/webAssemblyComponent";
 // import type { MediaStream, MediaStreamConstraints } from "@types/webrtc";
 // import { MediaStream, MediaStreamConstraints } from "webrtc";
 
@@ -51,6 +52,7 @@ function App() {
       >
         <BatteryStatus />
         <Header />
+        <WebAssemblyComponent />
         <PhoneNumberAuthForm />
         <VibrateCamera />
         <InstallButton />
